@@ -25,6 +25,6 @@ bspc rule -a Screenkey manage=off
 $HOME/.config/polybar/launch.sh
 
 nm-applet &
-feh --bg-center $HOME/Pictures/clouds_fog_trees_15201_1920x1200.jpg
+feh --bg-center $HOME/Pictures/gits_lift.png
 compton --config $HOME/.config/compton.conf -b
 dunst -config .config/dunst/dunstrc
