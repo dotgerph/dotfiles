@@ -18,6 +18,9 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
+;custom vars
+petrol = #237986
+
 [bar/example]
 monitor = eDP1
 width = 100%
@@ -80,7 +83,7 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
-format-prefix-underline = ${colors.secondary}
+format-prefix-underline = ${colors.petrol}
 
 label-layout = %layout%
 label-layout-underline = ${colors.secondary}
@@ -88,7 +91,7 @@ label-layout-underline = ${colors.secondary}
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
+label-indicator-underline = ${colors.petrol}
 
 [module/filesystem]
 type = internal/fs
@@ -105,7 +108,7 @@ type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-underline= ${colors.petrol}
 label-focused-padding = 2
 
 label-occupied = %index%
@@ -193,7 +196,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
-format-underline = #f90000
+format-underline = ${colors.petrol}
 label = %percentage:2%%
 
 [module/memory]
@@ -201,7 +204,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
-format-underline = #4bffdc
+format-underline = ${colors.petrol}
 label = %percentage_used:2%%
 
 [module/wlan]
@@ -224,7 +227,7 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground}
+ramp-signal-foreground = ${colors.petrol}
 
 [module/eth]
 type = internal/network
@@ -254,7 +257,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground}
-format-underline = #0a6cf5
+format-underline = ${colors.petrol}
 
 label = %date% %time%
 
@@ -293,7 +296,7 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = ${colors.petrol}
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
@@ -323,7 +326,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f50a4d
+format-underline = ${colors.petrol}
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
