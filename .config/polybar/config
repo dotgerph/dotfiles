@@ -59,7 +59,7 @@ modules-right = filesystem xbacklight volume memory cpu eth battery1 battery2 te
 tray-position = right
 tray-padding = 1
 ;tray-transparent = true
-tray-background = #222222
+tray-background = #232c31
 tray-detached = false
 ;tray-offset-x = -50
 
@@ -107,19 +107,23 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %index%
+ws-icon-default =  
+
+;format = <label-state> <label-mode>
+
+label-focused = 
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.petrol}
 label-focused-padding = 2
 
-label-occupied = %index%
+label-occupied = %icon%
 label-occupied-padding = 2
 
-label-urgent = %index%!
+label-urgent = %icon%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-label-empty = %index%
+label-empty = %icon%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
