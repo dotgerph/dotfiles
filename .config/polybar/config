@@ -112,7 +112,7 @@ ws-icon-default = 
 ;format = <label-state> <label-mode>
 
 label-focused = 
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${colors.petrol}
 label-focused-underline= ${colors.petrol}
 label-focused-padding = 2
 
