@@ -24,6 +24,7 @@ bspc rule -a Screenkey manage=off
 
 $HOME/.config/polybar/launch.sh
 
+xset -dpms s off
 nm-applet &
 feh --bg-center $HOME/Pictures/gits_lift.png
 compton --config $HOME/.config/compton.conf -b
