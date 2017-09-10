@@ -132,3 +132,10 @@ XF86AudioLowerVolume
 
 XF86AudioMute
 	exec pactl set-sink-mute 0 toggle #volume mute 
+
+XF86MonBrightnessUp
+	exec xbacklight -inc 5 # increase screen brightness
+
+XF86MonBrightnessDown
+	exec xbacklight -dec 5 # decrease screen brightness
+
