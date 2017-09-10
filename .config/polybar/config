@@ -271,13 +271,15 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+format-volume = <label-volume>
+label-volume = VOL: %percentage:3%%
 label-volume-foreground = ${root.foreground}
+label-volume-underline = ${colors.petrol}
 
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+;format-muted-prefix = " "
+format-muted-foreground = ${colors.foreground}
+label-muted = VOL: MUTE
+label-muted-underline = ${colors.petrol}
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
