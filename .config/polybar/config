@@ -179,8 +179,9 @@ label-song-ellipsis = true
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <bar>
-label = BL
+format = <label>
+label = BL: %percentage:3%%
+label-underline = ${colors.petrol}
 
 bar-width = 10
 bar-indicator = |
