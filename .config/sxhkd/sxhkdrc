@@ -16,7 +16,7 @@ super + Escape
 
 # lock screen with i3lock-fancy
 super + shift + x
-	i3lock-fancy
+	i3lock-fancy -t "system locked" -f Roboto-Black -p
 
 #
 # bspwm hotkeys
