@@ -279,7 +279,7 @@ label-volume-underline = ${colors.petrol}
 
 ;format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground}
-label-muted = VOL: MUTE
+label-muted = VOL: MUTED
 label-muted-underline = ${colors.petrol}
 
 bar-volume-width = 10
