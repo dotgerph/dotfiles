@@ -24,7 +24,7 @@ petrol = #237986
 [bar/example]
 monitor = eDP1
 width = 100%
-height = 27
+height = 23
 ;offset-x = 12
 offset-y = 8 
 radius = 0.0
@@ -47,8 +47,12 @@ module-margin-right = 1
 
 font-0 = Monospace:pixelsize=10:weight=bold;1
 ;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-1 = FontAwesome:size=10;1
+font-1 = "Font Awesome 5 Brands:style=Solid:size=10;1"
 font-2 = "Wuncon Siji:pixelsize=10;1"
+font-3 = "DejaVu Sans Mono:size=10:antialias=false;2"
+font-4 = "MaterialIcons:size=10:antialias=false;2"
+font-5 = "icomoon:size=10:antialias=false;2"
+font-6 = "Ubuntu Nerd Font:size=10:antialias=false;2"
 
 ;dim-value = 0
 
@@ -67,7 +71,7 @@ tray-offset-x = -4
 wm-restack = bspwm
 ;wm-restack = i3
 
-;override-redirect = true
+override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
@@ -110,11 +114,12 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-default =  
+ws-icon-default = 
 
 ;format = <label-state> <label-mode>
 
-label-focused = 
+label-focused = 
+
 ;label-focused-background = ${colors.petrol}
 ;label-focused-underline= ${colors.petrol}
 label-focused-padding = 2
@@ -202,11 +207,25 @@ card = intel_backlight
 
 [module/cpu]
 type = internal/cpu
-interval = 2
+interval = 1
+format = <label>  <ramp-coreload>
 ;format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
 format-underline = ${colors.petrol}
 label = CPU: %percentage:2%%
+ramp-coreload-0 = ▂
+ramp-coreload-1 = ▃
+ramp-coreload-2 = ▄
+ramp-coreload-3 = ▅
+ramp-coreload-4 = ▆
+ramp-coreload-5 = ▇
+#ramp-coreload-0-foreground = ${colors.foreground}
+#ramp-coreload-1-foreground = ${colors.foreground}
+#ramp-coreload-2-foreground = ${colors.yellow}
+#ramp-coreload-3-foreground = ${colors.yellow}
+#ramp-coreload-4-foreground = ${colors.urgent}
+#ramp-coreload-5-foreground = ${colors.urgent}
+
 
 [module/memory]
 type = internal/memory
@@ -264,7 +283,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix =  
 format-prefix-foreground = ${colors.foreground}
 format-underline = ${colors.petrol}
 
@@ -385,7 +404,7 @@ screenchange-reload = true
 ;compositing-border = over
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+;margin-top = 5
+;margin-bottom = 5
 
 ; vim:ft=dosini
