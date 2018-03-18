@@ -17,6 +17,8 @@ foreground-alt = #555
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
+yellow = #ebcb8b
+urgent = #bf616a
 
 ;custom vars
 petrol = #237986
@@ -114,11 +116,11 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-default = 
+ws-icon-default = 
 
 ;format = <label-state> <label-mode>
 
-label-focused = 
+label-focused = 
 
 ;label-focused-background = ${colors.petrol}
 ;label-focused-underline= ${colors.petrol}
@@ -219,12 +221,12 @@ ramp-coreload-2 = ▄
 ramp-coreload-3 = ▅
 ramp-coreload-4 = ▆
 ramp-coreload-5 = ▇
-#ramp-coreload-0-foreground = ${colors.foreground}
-#ramp-coreload-1-foreground = ${colors.foreground}
-#ramp-coreload-2-foreground = ${colors.yellow}
-#ramp-coreload-3-foreground = ${colors.yellow}
-#ramp-coreload-4-foreground = ${colors.urgent}
-#ramp-coreload-5-foreground = ${colors.urgent}
+ramp-coreload-0-foreground = ${colors.foreground}
+ramp-coreload-1-foreground = ${colors.foreground}
+ramp-coreload-2-foreground = ${colors.yellow}
+ramp-coreload-3-foreground = ${colors.yellow}
+ramp-coreload-4-foreground = ${colors.urgent}
+ramp-coreload-5-foreground = ${colors.urgent}
 
 
 [module/memory]
